@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="robots" content="index, follow">
+<title>Loading Animation Bar</title>	
+<link rel="stylesheet" href="css/main.css">
+	
+<!--[if lt IE 9]>
+<script src="js/IE9.js"></script>
+<script src="js/html5shiv.js"></script>
+ <script src="js/respond.min.js"></script>
+ 
+<![endif]-->
+<!--[if lt IE 8]>
+<script src="js/IE8.js"></script>
+<script src="js/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+
+<!--[if lt IE 7]>
+<script src="js/IE7.js"></script>
+<![endif]-->	
+
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="bar"></div>
+        <div class="rate" data-rate="70"></div>
+    </div>
+</body>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.animateNumber.js"></script>
+<script src="js/jquery.animateNumber.min"></script>
+<script>
+    var progressWrap = $('.progress-bar'),
+        progressBar = progressWrap.find('.bar'),
+        progressText = progressWrap.find('.rate'),
+        progressRate = progressText.attr('data-rate');
+        console.log(progressRate);
+
+    /*  // CASE 1: setInterval
+
+        //bar animation 2.5s width change..
+        progressBar.animate({width: progressRate+'%'}, 2500);
+
+        setInterval( textAnimation, 1000/10 ); //0.1초마다 길이 계산하여 퍼센트 증가
+
+        function textAnimation(){
+            var currentRate = progressBar.width() / progressWrap.width() * 100;
+            progressText.text( Math.ceil(currentRate) +'%');
+        };
+    */
+
+    /*
+    // CASE 2 : animate
+            /*  <<예제>>
+                progressBar.animate({width: progressRate+'%'}, 2500, 'easeInOutQuint', function(){...});
+                //옵셔 값, 옵션 값
+                progressBar.animate({width: progressRate+'%'},{
+                    duration: 2500,
+                    easing: 'easeInOutQuint',
+                })
+            
+                   
+    //bar animation 2.5s width change..
+    progressBar.animate({width: progressRate+'%'}, 2500);
+
+    // animate 옵션을 활용 사용자 속성 만들고, 속성이 바뀌는 것을 작성 가능
+    $({init:0}).animate({init: progressRate}, {
+        duration: 2500,
+        progress: function(){
+            var progress = this.init;
+            progressText.text( parseInt(progress) + '%');
+        }
+    });
+    */
+
+    // CASE 3: animate Number Library
+    var percent_number_step = $.animateNumber.numberStepFactories.append(' %')
+    progressBar.animate({width: progressRate+'%'}, 2500);
+    progressText.animateNumber(
+        { 
+            number: progressRate,
+            numberStep: percent_number_step
+        }, 2500
+    );
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
