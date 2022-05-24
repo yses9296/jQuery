@@ -101,7 +101,7 @@ $( function() {
         e.preventDefault();
         var targetEl = $(this).attr('href');
 
-        // $('.mytab > div').hide();
+        $('.mytab > div').hide();
         $(targetEl).show();
 
         var lat = $(targetEl).attr('data-lat');
@@ -122,9 +122,9 @@ $( function() {
             center: new kakao.maps.LatLng(lat, lng), 
             level: 3 
         };
-    
-    var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); 
         
-    }//myMap
+    }//myTapMap
 
 });

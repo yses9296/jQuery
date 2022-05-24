@@ -5,12 +5,12 @@
     height: 400px;
 }
 
-.maplink li {
+.maplink li, .mytab li {
     display: inline-block;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
 }
-.maplink li a {
+.maplink li a , .mytab li a {
     display: block;
     text-decoration: none;
     color: #333;
