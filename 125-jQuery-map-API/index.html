@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Maps</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <h1>Tab - Map</h1>
+    <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1" >종로 구청</a></li>
+          <li><a href="#tabs-2" >서울 시청</a></li>
+          <li><a href="#tabs-3" >강서 구청</a></li>
+        </ul>
+        <div id="tabs-1" data-lat="37.5727906" data-lng="126.9769891">
+            <div id="map1" class="map"></div>
+        </div>
+        <div id="tabs-2" data-lat="37.5662994" data-lng="126.9757564">
+            <div id="map2" class="map"></div>
+        </div>
+        <div id="tabs-3" data-lat="37.566419" data-lng="126.9079054">
+            <div id="map3" class="map"></div>
+         </div>
+      </div>
+       
+    <!-- KEY: a4795899fd5820c2563fde50cd43a560 -->
+    <!-- <script  src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a4795899fd5820c2563fde50cd43a560"></script>
+    <script src="js/main_2.js"></script>
+</body>
+</html>
