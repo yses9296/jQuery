@@ -8,8 +8,10 @@
 		<meta name="keywords" content="free, psd, template, responsive"/>
 		<meta name="robots" content="index, follow"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- style -->
+		<link rel="stylesheet" href="css/defualt.css"/>
+		<!-- script -->
 		<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-		
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
 		  WebFont.load({
@@ -20,50 +22,22 @@
 		</script>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-		<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
-		<script>$.fn.cycle.defaults.autoSelector = '.cycle-slideshow';</script>
-
-
-		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>		
-		<script>
-			$(document).ready(function(){
-			
-				$('.posts_list').bxSlider({
-					minSlides: 1,
-					maxSlides: 3,
-					moveSlides: 1,
-					slideWidth:370,
-					slideMargin : 30,
-					pager:false,
-					nextSelector: '.recent_posts .controls .next',
-					prevSelector :'.recent_posts .controls .prev' 
-				});
-				
-				$(".toggle").click(function(){
-					$(".main-menu").slideToggle();
-				}); 
-				
-				$(window).resize(function(){
-					if($(window).width() > 768){
-						//참이면 할일
-						$(".main-menu").show();
-					} else{
-						//거짓이면 할일
-						$(".main-menu").hide();
-					}
-				});				
-				
-				
-			});
-		</script>
 		
-		<link rel="stylesheet" href="css/defualt.css"/>	
+		<!-- <script src="http://malsup.github.com/jquery.cycle2.js"></script> -->
+		<!-- <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script> -->
+		<script src="js/jquery.cycle2.js"></script>
+		<script src="js/jquery.cycle2.min.js"></script>
+		<script src="js/jquery.cycle2.carousel.min.js"></script>
+		<script>$.fn.cycle.defaults.autoSelector = '.cycle-slideshow';</script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>			
+		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<header> 
 			<div class="container clearfix">
-				<h1 class="logo"><a href="">Waxom logo</a></h1>
+				<h1 class="logo">
+					<a href="" >Waxom logo</a>
+				</h1>
 				<nav class="clearfix">
 					<ul class="main-menu">
 						<li><a href="" class="active">Home</a></li>
