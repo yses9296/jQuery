@@ -18,3 +18,11 @@
     padding: 10px 20px;
     text-align: center;
 }
+
+.mytab > div {
+    display: none;
+}
+.mytab > div:first-of-type{
+/* .mytab > div:first-child{ */
+    display: block;
+}

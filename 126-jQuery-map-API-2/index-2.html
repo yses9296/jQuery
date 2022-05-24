@@ -12,71 +12,40 @@
 <body>
     <h1>Tab - Map</h1>
     <div id="tabs">
-        <ul>
-          <li><a href="#tabs-1" >종로 구청</a></li>
-          <li><a href="#tabs-2" >서울 시청</a></li>
-          <li><a href="#tabs-3" >강서 구청</a></li>
-        </ul>
-        <div id="tabs-1" data-lat="37.5727906" data-lng="126.9769891">
-            <div id="map1" class="map"></div>
-        </div>
-        <div id="tabs-2" data-lat="37.5662994" data-lng="126.9757564">
-            <div id="map2" class="map"></div>
-        </div>
-        <div id="tabs-3" data-lat="37.566419" data-lng="126.9079054">
-            <div id="map3" class="map"></div>
-         </div>
+      <ul>
+        <li><a href="#tabs-1" >종로 구청</a></li>
+        <li><a href="#tabs-2" >서울 시청</a></li>
+        <li><a href="#tabs-3" >강서 구청</a></li>
+      </ul>
+      <div id="tabs-1" data-lat="37.5727906" data-lng="126.9769891">
+          <div id="map1" class="map"></div>
       </div>
+      <div id="tabs-2" data-lat="37.5662994" data-lng="126.9757564">
+          <div id="map2" class="map"></div>
+      </div>
+      <div id="tabs-3" data-lat="37.566419" data-lng="126.9079054">
+          <div id="map3" class="map"></div>
+       </div>
+    </div>
 
       <hr>
       
       <div id="accordion">
         <h3>Section 1</h3>
-        <div>
-          <p>
-          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-          </p>
+        <div id="acc_map1" class="map" data-lat="37.5727906" data-lng="126.9769891">
+        
         </div>
+
         <h3>Section 2</h3>
-        <div>
-          <p>
-          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-          suscipit faucibus urna.
-          </p>
+        <div id="acc_map2" class="map" data-lat="37.5662994" data-lng="126.9757564">
+
         </div>
+
         <h3>Section 3</h3>
-        <div>
-          <p>
-          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-          </p>
-          <ul>
-            <li>List item one</li>
-            <li>List item two</li>
-            <li>List item three</li>
-          </ul>
+        <div id="acc_map3" class="map" data-lat="37.566419" data-lng="126.9079054">
+
         </div>
-        <h3>Section 4</h3>
-        <div>
-          <p>
-          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-          mauris vel est.
-          </p>
-          <p>
-          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos.
-          </p>
-        </div>
+
       </div>
        
     <!-- <script  src="http://code.jquery.com/jquery-latest.min.js"></script> -->
