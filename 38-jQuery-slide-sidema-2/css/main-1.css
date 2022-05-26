@@ -2,14 +2,16 @@
 body { margin: 0; }
 
 .slider-container {
-    width: 320px;
+    /* width: 320px; */
+    width: 640px;
     height: 240px;
     margin: 0 auto;
     position: relative;
 }
 
 .slider {
-    width: 320px;
+    /* width: 320px; */
+    width: 640px;
     height: 240px;
     margin: 0 auto;
 }
