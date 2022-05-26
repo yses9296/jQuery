@@ -1,0 +1,30 @@
+* { font-family: sans-serif; }
+body { margin: 0; }
+
+.slider-container {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.prev, .next {
+    background: rgba(255,255,255,.5);
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    top: 100px;
+    border: none;
+    cursor: pointer;
+    transition: all .25s;
+    font-weight: bold;
+}
+.next { right: 0; }
+.prev:hover, .next:hover { background: rgba(255,255,255,.75); }
+button:focus { outline: 0; }
