@@ -1,0 +1,71 @@
+* {
+    margin: 0; padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: black; 
+    color: #fff;
+    padding: 5px 10px;
+}
+h2 {
+    text-align: center;
+}
+
+.slide-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+/* 좌우 컨트롤 슬라이드 - nextText, prevText  */
+.controls {
+    position: relative;
+}
+.controls .bx-prev, .controls .bx-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+}
+.controls .bx-prev {
+    right: calc(100% + 40px);
+}
+.controls .bx-next {
+    left: calc(100% + 40px);
+}
+
+/* 좌우 컨트롤 슬라이드 - prevSelector, nextSelector */
+.image-controls .img_controls span a {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    text-indent: -9999em;
+}
+.image-controls .img_controls span.prev a {
+    background-image: url(./images/left.png);
+}
+.image-controls .img_controls span.next a {
+    background-image: url(./images/right.png);
+}
+
+.image-controls {
+    position: relative;
+}
+.img_controls .bx-prev, .img_controls .bx-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+}
+.img_controls .bx-prev {
+    right: calc(100% + 40px);
+}
+.img_controls .bx-next {
+    left: calc(100% + 40px);
+}
