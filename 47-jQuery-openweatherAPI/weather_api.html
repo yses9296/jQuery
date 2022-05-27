@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <style>
+        div {height: 40px;  display: flex;}
+        .cicon {height: 60px;}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.min.js" ></script>
+</head>
+<script>
+    /*
+        $.getJSON('파일경로', function(data){
+            //data로 할 일...
+        });
+        //"https://api.openweathermap.org/data/2.5/forecast?id=1835848&appid=ab9e97e6efb01ca88c5bc4b7f0b2655c&units=metric" //10days
+        
+        $date = data.list[0].dt_txt;
+        $temp = data.list[0].main.temp;
+        $temp_min = data.list[0].main.temp_min;
+        $temp_max = data.list[0].main.temp_max;
+        $icon = data.list[0].weather[0].icon;
+    */
+
+    //"https://api.openweathermap.org/data/2.5/weather?id=1835848&appid=ab9e97e6efb01ca88c5bc4b7f0b2655c&units=metric" //current day
+    $.getJSON( "https://api.openweathermap.org/data/2.5/weather?id=1835848&appid=ab9e97e6efb01ca88c5bc4b7f0b2655c&units=metric", function( data ) {
+        // $date = data.dt;
+        $temp = data.main.temp;
+        $temp_min = data.main.temp_min;
+        $temp_max = data.main.temp_max;
+        $icon = data.weather[0].icon;
+        $icon_url= "<img src='http://openweathermap.org/img/wn/"+$icon+".png'>";
+
+        // Date.now() == $.now ()
+        // new Date($.now())
+        var $now = new Date($.now());
+        //getHours()  getMinutes()  getFullYear() getMonth() getDate()
+        //getMonth >> 0이 1월
+        var currentDate =  $now.getFullYear() + ". " + ($now.getMonth()+1) +". " + $now.getDate() + ", " +  $now.getHours() +" : " +  $now.getMinutes();
+
+        // $('.cdate').append($date);
+        $('.cdate').append(currentDate);
+        $('.ctemp').append($temp);
+        $('.clowtemp').append($temp_min);
+        $('.chightemp').append($temp_max);
+        $('.cicon').append($icon_url);
+    });
+
+    
+</script>
+<body>
+    <h1>Weather - openweathermap API</h1>
+    <h2 class="cdate">Today is.. </h2>
+    <div class="ctemp">현재 온도: </div>
+    <div class="clowtemp">최저 온도: </div>
+    <div class="chightemp">최고 온도: </div>
+    <div class="cicon">아이콘 : </div>
+    
+</body>
+</html>

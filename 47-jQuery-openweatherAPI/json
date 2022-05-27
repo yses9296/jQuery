@@ -1,0 +1,34 @@
+{
+    "dt":1653652800,
+    "main":{
+        "temp":21.01,
+        "feels_like":20.47,
+        "temp_min":19,
+        "temp_max":21.01,
+        "pressure":1001,
+        "sea_level":1001,
+        "grnd_level":996,
+        "humidity":50,
+        "temp_kf":2.01
+    },
+    "weather":[
+        {
+            "id":800,
+            "main":"Clear",
+            "description":"clear sky",
+            "icon":"01n"
+        }
+    ],
+    "clouds":{
+        "all":0
+    },
+    "wind":{
+        "speed":2.17,"deg":241,"gust":5.14
+    },
+    "visibility":10000,
+    "pop":0,
+    "sys":{
+        "pod":"n"
+    },
+    "dt_txt":"2022-05-27 12:00:00"
+}
