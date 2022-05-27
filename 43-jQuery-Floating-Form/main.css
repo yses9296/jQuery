@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0;box-sizing: border-box; }
+
+body {
+  color: #444;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.input-group {
+    width: 340px;
+    margin: 50px auto;
+    position: relative;
+}
+input {
+    border: none;
+    border-bottom: 1px solid #888;
+    display: block;
+    font-size: 20px;
+}
+input:focus {
+    outline: none;
+    border-bottom-width: 4px;
+    border-color: #48f;
+    transition: 0.5s;
+}
+label {
+    position: absolute;
+    color: #000;
+    left: 0; top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+.label-top {
+    top: -20px;
+    opacity: 1;
+    visibility: visible;
+}
