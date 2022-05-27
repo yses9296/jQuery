@@ -1,0 +1,22 @@
+* {
+    margin: 0; padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: black; 
+    color: #fff;
+    padding: 5px 10px;
+}
+h2 {
+    text-align: center;
+}
+
+.slide-wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
