@@ -1,0 +1,23 @@
+body { font-family: 'Raleway', sans-serif; }
+
+textarea {
+    resize: vertical;
+}
+
+.well-form {
+  width: 300px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.well-form h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.error {
+    border-color: red;
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
+}
