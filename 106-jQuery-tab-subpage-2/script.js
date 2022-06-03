@@ -33,7 +33,6 @@ subLick.each(function(index){
     }
 })
 
-
 //탭 메뉴 active
 function activateTab(index){
     tabContent.hide();
@@ -41,9 +40,6 @@ function activateTab(index){
     tabLink.find('a').removeClass('active');
     tabLink.eq(index).find('a').addClass('active')
 }
-
-tabLink.eq(0).trigger('click')
-
 
 //Top Menu
 var mainMenu = $('.menu li');
