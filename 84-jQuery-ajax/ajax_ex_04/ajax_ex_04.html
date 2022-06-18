@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Tutorial #84 - EX 04</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('button').click(function(){
+                /*
+                    repsonseTxt : 서버에 요청이 완료되면, 결과 내용 (parameter)
+                    statusTxt : 서버에 요청을 보내면, 요청의 상태를 숫자로 표현.
+                    xhr : 요청한 오브젝트
+                */
+                // $('#div1').load('url 경로', 요청 완료되면 할 일 function(repsonseTxt, statusTxt, xhr){...실제 할 일...})
+                $('#div1').load('demo_test.txt', function(repsonseTxt, statusTxt, xhr){
+                    console.log('로드할 파일의 내용 : ' + repsonseTxt);
+                    console.log('로드할 파일과의 연결 상태 : ' + statusTxt);
+                    console.log('요청의 상태 : ' + xhr);
+                    console.log('요청한 파일의 태 : ' + xhr.status);
+
+                    if (statusTxt == 'success' && xhr.status == 200){
+                        alert('File is ready for load')
+                    }
+                    else {
+                        alert('File is not ready for load')
+                    }
+                })//load
+            });
+        })//document ready
+    
+    
+    
+    </script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+
+</body>
+</html>
