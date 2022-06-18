@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Headers with FitText: Starter Pen - Tutorial #85</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <style>
+        body { color: #444; font-size: 14px; }
+
+        h1 { 
+            font-family: 'Poiret One', sans-serif;
+            font-size: 4em;
+            margin-bottom: .2em;
+        }
+
+        p { font-family: 'Open Sans', sans-serif; }
+
+        .main-container {
+            width: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid main-container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>FlowType.js</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsam, consectetur provident illo, omnis possimus a et sapiente non optio repellendus cum consequatur dolores quia, quae totam asperiores sed quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum architecto ipsa, numquam, a alias saepe beatae quos, similique libero veniam distinctio labore dolorum. Omnis, voluptatibus! Laborum amet, fugiat possimus ea.</p>      
+          </div>
+        </div>
+      </div>
+	  
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
+    <script>
+        $('h1').flowtype({
+            fontRatio: 4.5,
+            maxFont : 60,
+            minFont : 24
+        });
+        $('p').flowtype({
+            fontRatio: 22,
+            minFont : 16
+        });
+    </script>
+</body>
+</html>

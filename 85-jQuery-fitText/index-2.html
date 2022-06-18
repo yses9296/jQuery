@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Headers with FitText: Starter Pen - Tutorial #85</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            color: #444;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-family: 'Lobster', Arial, sans-serif;
+        }
+        .container-fluid { max-width: 600px; }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="title1">Flexible Font Size</h1>
+            <h2 class="title2">I like my text responsive</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eaque dignissimos tenetur. Aliquam sed sint, ratione assumenda? Quaerat consequatur nulla rem corporis, et, obcaecati cupiditate! Adipisci omnis nesciunt amet vero. Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Dolorum vero, aliquam incidunt sequi similique alias voluptate. Possimus magni, quasi consequuntur. Ipsa nulla nobis, reprehenderit consectetur odit a? Assumenda, itaque, culpa!</p>
+          </div>
+        </div>
+      </div>
+	  
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/fittext/1.2/jquery.fittext.js"></script>
+    <script>
+        $(".title1").fitText(.68);
+        $('.title2').fitText(1.1,{ minFontSize: '18px' });
+    </script>
+</body>
+</html>
