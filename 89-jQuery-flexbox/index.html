@@ -28,20 +28,32 @@
             position: fixed;
             left: 0; right: 0; top: 0; bottom: 0;
             background:rgba(0,0,0,.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            visibility:hidden;
+            visibility: hidden;
             opacity:0;
-            transition:opacity 0.3s;
+            transition: opacity 0.3s;
         }
         .modal-container.active{
-            opacity:1;
-            visibility:visible;
+            opacity: 1;
+            visibility: visible;
         }
-        .modal{
+        .modal {
+            position: relative;
             background: #fff;
             width: 400px;
             padding:20px;
             border-radius:10px;
+        }
+        .modal h2 {
+            background-color: #40a9ed;
+            color: #fff;
+        }
+
+        @keyframes opacity {
+            
         }
     </style>
 </head>
@@ -63,13 +75,16 @@
       </div>
 
 
-      <script>
+    <script>
+        $('.modal-container').hide();
+
         $('.btn').click(function(){
-            
+            $('.modal-container').addClass('active');
         });
         $('.modal-container').click(function(){
-            
+            $('.modal-container').removeClass('active');
         });
-            </script>
+
+    </script>
 </body>
 </html>
