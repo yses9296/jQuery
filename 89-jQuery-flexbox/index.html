@@ -34,14 +34,14 @@
 
             visibility: hidden;
             opacity:0;
-            transition: opacity 0.3s;
+            transition: 0.5s;
         }
-        .modal-container.active{
+        .modal-container.active {
             opacity: 1;
             visibility: visible;
+            transition: 0.5s;
         }
         .modal {
-            position: relative;
             background: #fff;
             width: 400px;
             padding:20px;
@@ -52,9 +52,6 @@
             color: #fff;
         }
 
-        @keyframes opacity {
-            
-        }
     </style>
 </head>
 <body>
@@ -76,7 +73,6 @@
 
 
     <script>
-        $('.modal-container').hide();
 
         $('.btn').click(function(){
             $('.modal-container').addClass('active');
