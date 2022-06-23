@@ -36,4 +36,12 @@ $( function() {
 
     //radio
     $( "input[type='radio']" ).checkboxradio();
+
+    //submit button
+    $( "#submit" ).button({
+        disabled: true
+    });
+    $( "#submit" ).click( function( e ) {
+      e.preventDefault();
+    } );
 });//document ready

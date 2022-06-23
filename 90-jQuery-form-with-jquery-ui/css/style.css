@@ -41,3 +41,7 @@ form > .ui-widget {
   background: none;
   text-align: left; 
 }
+
+fieldset {
+  margin-bottom: 40px;
+}
