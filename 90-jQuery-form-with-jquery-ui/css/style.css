@@ -36,7 +36,7 @@ form > .ui-widget {
 .ui-selectmenu-button.ui-button {
   width: 100%;
 }
-#category.ui-button {
+#category.ui-button, #startDate.ui-button {
   width: 100%;
   background: none;
   text-align: left; 

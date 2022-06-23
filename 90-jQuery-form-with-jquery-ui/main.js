@@ -1,7 +1,8 @@
 $( function() {
+    // location
     $('#location').selectmenu();
 
-
+    //category
     var availableTags = [
         "HTML",
         "CSS",
@@ -18,4 +19,21 @@ $( function() {
     $( "#category" ).autocomplete({
         source: availableTags
     });
+
+    //spinner
+    $( "#experience" ).spinner({
+        min: 0,
+        max: 10,
+        step: 2
+    });
+    
+    // dataPicker
+    $( "#startDate" ).datepicker({
+        minDate: new Date(),
+        maxDate: "+2w"
+    });
+    $('#startDate').datepicker("setDate", new Date());
+
+    //radio
+    $( "input[type='radio']" ).checkboxradio();
 });//document ready
