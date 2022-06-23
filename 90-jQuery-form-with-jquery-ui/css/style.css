@@ -16,6 +16,16 @@ body {
 }
 .container h1 { text-align: center; }
 
+#progress {position: relative; height: 32px;}
+.percent {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+  color: #444;
+}
+
 /* index css */
 form > .ui-widget {
   margin-bottom: 20px;
