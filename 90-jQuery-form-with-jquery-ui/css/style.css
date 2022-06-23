@@ -36,3 +36,8 @@ form > .ui-widget {
 .ui-selectmenu-button.ui-button {
   width: 100%;
 }
+#category.ui-button {
+  width: 100%;
+  background: none;
+  text-align: left; 
+}

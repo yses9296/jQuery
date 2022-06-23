@@ -14,8 +14,8 @@ $( function() {
         "PHP",
         "Swift",
         "SQL"
-      ];
-      $( "#category" ).autocomplete({
+    ];
+    $( "#category" ).autocomplete({
         source: availableTags
-      });
+    });
 });//document ready
