@@ -32,7 +32,7 @@ $(function(){
 
     function move(index){
         var scr = $sectionInfo[index];
-        console.log(scr);
+
         $('html, body').stop().animate({scrollTop: scr}, 600, 'easeOutCubic');
         console.log("Scrolling Succedd")
     }
@@ -43,14 +43,14 @@ $(function(){
         var sct = $(this).scrollTop();
 
         $section.each(function(index){
-            var $this = $(this);
+            var $thisSection = $(this);
             var $newTop = $sectionInfo[index] - sct;
 
             if(sct > $sectionInfo[index]){
                 $newTop *= 0.5;
             }
 
-            $this.css({top: $newTop});
+            $thisSection.css({top: $newTop});
         })
 
         

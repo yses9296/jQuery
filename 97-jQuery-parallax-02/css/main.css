@@ -27,10 +27,6 @@ a {text-decoration: none; color: #333; display: block;}
 .mSection02 {top: 1200px;}
 .mSection03 {top: 2400px;}
 
-
-.parallax > div {
-    position: relative;
-}
 .arrow {
     position: absolute;
     top: 400px; right: 50px;
