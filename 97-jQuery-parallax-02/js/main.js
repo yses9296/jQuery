@@ -33,7 +33,7 @@ $(function(){
     function move(index){
         var scr = $sectionInfo[index];
 
-        $('html, body').stop().animate({scrollTop: scr}, 600, 'easeOutCubic');
+        $('html, body').stop().animate({scrollTop: scr}, 600);
         console.log("Scrolling Succedd")
     }
 
