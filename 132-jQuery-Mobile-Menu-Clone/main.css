@@ -1,0 +1,42 @@
+/* reset  */
+ul, li { list-style:none; }
+a {
+    display: block; 
+    text-decoration: none;
+    color: #333;
+}
+
+/* layout */
+nav { 
+    padding: 10px;
+}
+nav ul{
+	display: flex;
+	gap: 20px;	
+}
+.pc{
+	background:#ebebeb;
+}
+.mobile {
+	background:#3498db;	
+	display: none;
+}
+.mobile a{
+	color:#fff;
+}
+.mobile{
+	display: none;
+}
+
+/* Media Query */
+@media (max-width:480px){
+	.mobile{
+		display: block;
+	}
+	.mobile ul{
+		flex-direction:column;
+	}
+	.pc{
+		display: none;
+	}
+}
