@@ -14,7 +14,9 @@ $(function(){
 
     menu.hover(
         function(){
-            header.stop().animate({height: newHeight});
+            if($(window).width() > 768 ){ //창 사이즈가 768 이상일 시 애니메이션 작동
+                header.stop().animate({height: newHeight});
+            }
         },
         function(){
             header.stop().animate({height: headerHeight})

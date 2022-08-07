@@ -2,7 +2,8 @@
 * {margin: 0; padding: 0;}
 ul, li {list-style: none;}
 .clearfix:after {content:''; display: block; clear: both;}
-/* .clearfix::before , .clearfix::after {content:''; display: block; clear: both;} */
+
+/* layout */
 body {
     background: rgb(255, 221, 166);
     overflow-y: scroll;
@@ -16,6 +17,7 @@ header {
     height: 50px;
     overflow: hidden;
 }
+
 header nav {width: 960px; margin: 0 auto;}
 
 nav > ul > li {
@@ -25,5 +27,6 @@ nav > ul > li {
     margin-right: 40px;
     position: relative;
 }
+
 /* header nav ul li ul {}
 header nav ul li ul {} */
