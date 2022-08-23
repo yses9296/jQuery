@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 128 - DataPicker API Gijgo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet"/>
+    <style>
+        .calendar {width: 50%; margin: 0 auto; }
+        span { font-size: 1.1em; font-weight: 700; text-transform: uppercase;}
+    </style>
+</head>
+<body>
+    <p class="calendar"><span>Date</span> <input type="text" id="gijgo"></p>
+
+    <script>
+        $('#gijgo').datepicker();
+    </script>
+</body>
+</html>

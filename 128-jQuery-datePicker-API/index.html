@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 128 - DataPicker API Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</head>
+<body>
+    <p>Date: <input type="text" id="datepicker"></p>
+
+<script>
+    $(function(){
+
+        $.datepicker.setDefaults({
+            nextText: "다음",
+            prevText: "이전",
+            monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+            dayNames: [ "일" , "월", "화", "수", "목", "금", "토"],
+            dayNamesMin: [ "일" , "월", "화", "수", "목", "금", "토"],
+            dayNamesShort: [ "일" , "월", "화", "수", "목", "금", "토"],
+        });
+
+
+        $( "#datepicker" ).datepicker();
+
+    });
+    //document ready
+</script>
+</body>
+</html>
