@@ -1,4 +1,14 @@
+/* MAIN  */
+main {
+    /* padding: 38px 20px; */
+}
+
+
 /* CATEGORY  */
+.category_list {
+    margin: 13px 0 10px;
+    padding-left: 20px;
+}
 .category_list li {
     margin-right: 27px;
 }
@@ -16,10 +26,6 @@
 }
 
 
-/* MAIN  */
-main {
-    /* padding: 38px 20px; */
-}
 
 
 
