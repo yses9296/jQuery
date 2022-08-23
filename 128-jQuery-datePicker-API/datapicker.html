@@ -17,7 +17,11 @@
     <p class="calendar"><span>Date</span> <input type="text" id="gijgo"></p>
 
     <script>
-        $('#gijgo').datepicker();
+        $('#gijgo').datepicker({
+            header: true, 
+            modal: true, 
+            footer: true 
+        });
     </script>
 </body>
 </html>
