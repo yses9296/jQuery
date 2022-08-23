@@ -1,0 +1,89 @@
+
+/* LAYOUT  */
+.container {
+    padding: 0 16px;
+}
+/* TYPOGRAPHY  */
+body {
+    font:15px/18ps 'SF UI Display';
+    font-weight: 500;
+}
+.header_tt {
+    font-weight: 600;
+    font-size: 20px;
+}
+.content_tt {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* LINK BUTTON  */
+.btn {
+    background: #262628;
+    color: #fff;
+    padding: 0 23px;
+    line-height: 38;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: inline-block;
+}
+.fixed_btn {
+    display: block;
+    padding: 0;
+    text-align: center;
+}
+.hidden {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 0; height: 0;
+    overflow: hidden;
+}
+
+.d_flex {
+    display: flex;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.aic {
+    align-items: center;
+}
+.spirte {
+    display: inline-block;
+    text-indent: -9999em;
+    width: 18px; 
+    height: 18px; 
+    border: none;
+}
+.aside_button {
+    background: url(../img/menu.png) no-repeat;
+    background-size: cover;
+}
+
+.wish{
+    background: url(../img/like.png) no-repeat;
+    background-size: cover;
+}
+.cart {
+    background: url(../img/cart.png) no-repeat;
+    background-size: cover;
+}
+
+/* FORM */
+input {
+    border: none;
+    border-bottom: 1px solid #c2c4ca;
+    line-height: 56px;
+}
+
+/* HEADER  */
+body > header {
+    height: 95px;
+    background: #fff;
+    padding: 38px 20px;
+}
+.header_top_links {
+    gap: 34px;
+}
+

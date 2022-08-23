@@ -1,0 +1,36 @@
+/* CATEGORY  */
+.category_list li {
+    margin-right: 27px;
+}
+.category_list li a {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #c2c4c4;
+    letter-spacing: 0.192px;
+    line-height: 45px;
+    display: block;
+}
+.category_list li.slick-active a{
+    color: #000;
+}
+
+
+/* MAIN  */
+main {
+    /* padding: 38px 20px; */
+}
+
+
+
+/* PRODUCT  */
+.product_list {
+    width: 100%;
+    height: auto;
+}
+.product_list li {
+
+}
+.product_list li a {
+
+}
